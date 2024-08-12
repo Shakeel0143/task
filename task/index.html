@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic One-Page Website</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Banner -->
+        <div id="banner" class="banner">
+            <p id="banner-description">Welcome to our website!</p>
+            <a id="banner-link" href="#">Learn More</a>
+            <p id="countdown"></p>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <h2>Dashboard</h2>
+            <label for="toggle-banner">Show Banner:</label>
+            <input type="checkbox" id="toggle-banner" onchange="toggleBanner()">
+
+            <label for="banner-description-input">Banner Description:</label>
+            <input type="text" id="banner-description-input" placeholder="Enter banner text">
+
+            <label for="banner-link-input">Banner Link:</label>
+            <input type="text" id="banner-link-input" placeholder="Enter link URL">
+
+            <label for="banner-timer-input">Banner Timer (seconds):</label>
+            <input type="number" id="banner-timer-input" placeholder="Enter time in seconds">
+
+            <button onclick="updateBanner()">Update Banner</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
